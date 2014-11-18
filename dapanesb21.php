@@ -13,7 +13,7 @@ require_once 'opendata.php';
 	// ΕΚΤΥΠΩΣΗ ΠΛΗΡΟΦΟΡΙΩΝ ΦΟΡΕΑ (UID, ΕΠΩΝΥΜΙΑ, ΜΟΝΑΔΕΣ, ΥΠΟΓΡΑΦΟΝΤΕΣ)
 	$client = new OpendataClient();
 	$client->setAuth('apiuser_1', 'ApiUser@1');
-	$string = "/search?org=". $org . "&type=Β.2.1&size=500&from_date=2014-01-01&page=0";
+	$string = "/search?org=". $org . "&type=Β.2.1&size=500&from_date=2014-01-01&page=1";
 	$response = $client->getResource($string);
 	if ($response->code === 200) {    
 		$unitData = $response->data;
