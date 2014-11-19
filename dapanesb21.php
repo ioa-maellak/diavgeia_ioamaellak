@@ -21,7 +21,7 @@ require_once 'opendata.php';
 		$counter = 1;
 		
 		foreach ($unitData['decisions'] as $unit) {
-			print $counter . ") ". $unit['subject'] . ": " . $unit['ada'] . " TYPE : " . $unit['decisionTypeId'] . ": ΗΜΕΡΟΜΗΝΙΑ : ". gmdate("d-m-Y", $unit['submissionTimestamp']/1000). " <a href=\"".  $unit['documentUrl'] . "\">Link</a> <br> \n";
+			print $counter . ") ". $unit['subject'] . ": " . $unit['ada'] . " TYPE : " . $unit['decisionTypeId'] . ": ΗΜΕΡΟΜΗΝΙΑ : ". gmdate("d-m-Y", $unit['submissionTimestamp']/1000). " <a href=\"".  $unit['url'] . "\">Link</a> <br> \n";
 			$kaeData = $unit['extraFieldValues']['sponsor'];
 			//print_r($kaeData);
 			foreach ($kaeData as $kae) {
