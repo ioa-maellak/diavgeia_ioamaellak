@@ -27,6 +27,7 @@ require_once 'opendata.php';
 			foreach ($kaeData as $kae) {
 				print  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp ΠΡΟΜΗΘΕΥΤΗΣ : ".  $kae['sponsorAFMName']['afm'] . " - " . $kae['sponsorAFMName']['name'] . "<br> \n";
 				print  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp ΚΑΕ : " . $kae['cpv'] . " ΠΟΣΟ : " . $kae['expenseAmount']['amount'] . "<br> \n";
+				sum += $kae['expenseAmount']['amount'];
 				
 			}	
 			$counter++;
