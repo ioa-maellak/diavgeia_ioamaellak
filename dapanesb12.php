@@ -4,7 +4,7 @@ require_once 'opendata.php';
 // ΕΚΤΥΠΩΣΗ ΠΛΗΡΟΦΟΡΙΩΝ ΦΟΡΕΑ (UID, ΕΠΩΝΥΜΙΑ, ΜΟΝΑΔΕΣ, ΥΠΟΓΡΑΦΟΝΤΕΣ)
 $client = new OpendataClient();
 $client->setAuth('apiuser_1', 'ApiUser@1');
-$response = $client->getResource('/search?unit=85780&type=Β.2.1&size=500&from_date=2014-01-01');
+$response = $client->getResource('/search?org=5006&type=Β.2.1&size=500&from_date=2014-01-01');
 if ($response->code === 200) {    
     $unitData = $response->data;
 	$sum = 0.0;
