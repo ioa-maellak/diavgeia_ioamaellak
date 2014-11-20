@@ -13,13 +13,13 @@
         $("#auto").autocomplete({
             source: data,
             select: function (event, ui) {
-                $("#auto").val(ui.item.EL + " / " + ui.item.CODE);
+                $("#auto").val(ui.item.label + " / " + ui.item.actor);
                 return false;
             }
         }).data("autocomplete")._renderItem = function (ul, item) {
             return $("<li></li>")
                 .data("item.autocomplete", item)
-                .append("<a><strong>" + item.EL + "</strong> / " + item.CODE + "</a>")
+                .append("<a><strong>" + item.label + "</strong> / " + item.actor + "</a>")
                 .appendTo(ul);
         };
     }, 'json');
