@@ -3,7 +3,7 @@ require_once 'opendata.php';
 
 // ΕΚΤΥΠΩΣΗ ΠΛΗΡΟΦΟΡΙΩΝ ΦΟΡΕΑ (UID, ΕΠΩΝΥΜΙΑ, ΜΟΝΑΔΕΣ, ΥΠΟΓΡΑΦΟΝΤΕΣ)
 $client = new OpendataClient();
-$response = $client->getResource('/dictionaries/THK');
+$response = $client->getResource('/dictionaries/CPV');
 if ($response->code === 200) {    
     $dictionaryData = $response->data;
 	$counter = 1;
