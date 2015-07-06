@@ -6,3 +6,8 @@ Files deriving from Diavgeia API project in Ioannina MA/ELLAK
   * Οργανισμών 
   * Μονάδων
   * Στοιχείων Λεξιλογίων (dictionaries)
+ 
+Μετά το τρίτο σχολείο κώδικα υλοποιήθηκε η πιλοτική αποθήκευση των δεδομένων σε βάση mysql.
+Η ΒΔ βρίσκεται στο gear του Openshift που έχουμε φτιάξει.
+
+
